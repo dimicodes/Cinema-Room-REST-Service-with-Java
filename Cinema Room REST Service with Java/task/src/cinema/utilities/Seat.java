@@ -10,6 +10,11 @@ public class Seat {
     private int price;
     @JsonIgnore // This annotation excludes the attribute from JSON serialization
     private boolean isAvailable;
+
+    // No-argument constructor
+    public Seat() {
+    }
+
     public Seat(int row, int column) {
         this.row = row;
         this.column = column;
